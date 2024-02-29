@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login Form</title>
   <link rel="stylesheet" href="/css/loginStyle.css">
-  <link rel="stylesheet" href="">
-
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/fontawesome-free-6.5.1-web/css/all.min.css">
+  <link rel="stylesheet" href="/css/fontawesome-free-6.5.1-web/css/fontawesome.min.css">
 </head>
 <body>
   <nav>
@@ -18,32 +19,24 @@
         <input type="text" placeholder="Search">
     </div>
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="/html/index.html" >Home</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="/html/aboutUs.html">About</a></li>
     </ul>
-    
     <div class="icons">
-        <a href="/"><img src="/images/account.png" alt="Account"></a>
+        <a href="/html/loginPage.html"><img src="/images/account.png"></a>
     </div>
   </nav>
-  <div class="login-container">
-    <form id="login-form">
-      <h2>Login</h2>
-      <div class="input-group">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-      </div>
-      <div class="input-group">
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-      </div>
-      <div class="button-group">
-        <button type="submit">Login</button>
-        <button type="button" onclick="window.location.href='signup.html'">Sign Up</button>
-      </div>
-    </form>
-  </div>
+
+  <!-----Footer----->
+  <footer id="footer">
+    <div>
+        <p class="footer">copywrite &copy; 2024 YalaGoaL.com </p>
+        <a href="https://www.facebook.com" target="_blank">facebook<i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com" target="_blank">instagram<i class="fab fa-instagram"></i></a>
+        <a href="https://youtube.com" target="_blank">youtube<i class="fab fa-youtube"></i></a>
+    </div>
+  </footer>
+  <!---Footer----->
 </body>
 </html>
