@@ -1,0 +1,44 @@
+.newsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: 20px 0 40px 0;
+}
+
+.newsCard {
+    width: calc(95% / 3);
+    padding: 10px 10px;
+    position: relative;
+    font-weight: 300;
+}
+
+.newsCard img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.newsCard h1 {
+    font-size: 25px;
+}
+
+.newsCard p {
+    position: absolute;
+    bottom: 0;
+}
+
+.newsCard p span {
+    font-style: italic;
+    font-size: small;
+    color: #999;
+    padding: 0 10px;
+}
+
+.newsCard h1:hover {
+    text-decoration: underline;
+}
+
+.newsCard img:hover {
+    opacity: 80%;
+}

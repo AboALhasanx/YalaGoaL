@@ -50,11 +50,12 @@ body {
     font-weight: bold;
   }
 
-  a i{
+    nav a i {
     font-size: 30px;
   }
   
-  nav a:hover {
+    nav a:hover,
+    nav a i:hover {
     color: #FFA7F4;
   }
   
@@ -115,7 +116,7 @@ body {
   }
 
   .league {
-    margin: 20px 0 10px 0;
+    margin: 20px 0 20px 0;
   }
 
   .matchesAndTable{
