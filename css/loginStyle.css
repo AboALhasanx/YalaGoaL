@@ -1,64 +1,48 @@
-* p {
-    margin: 0;
-}
-.loginForm {
-    width: 600px;
-        min-height: 400px;
+.containerLogin {
+    width: 450px;
+    height: 300px;
+    margin: 50px auto;
     background-color: #333;
-    margin: 20px auto;
-        border-radius: 20px;
+    border-radius: 30px;
+        padding: 20px;
 }
-.loginForm .hugeLogo{
-    padding: 30px 20px;
-    position: relative;
-    top: 5%;
-        left: 18%;
-}
-
-.loginForm .hugeLogo p {
-    font-size: 40px;
-    margin: 0;
-}
-.hugeLogo img {
-    width: 375px;
-}
-
-.loginForm form{
+section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-        align-items: center;
+    align-items: center;
+    gap: 30px;
+}
+
+section img {
+    max-width: 80%;
+    height: auto;
+}
+
+section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     }
-    
-    .loginForm .inputBox {
-        width: 100%;
-        height: 30px;
-        margin: 5px auto;
+section form a:hover {
+    color: #FFA7F4
+}
+
+section form input[type="email"],
+section form input[type="password"] {
+    padding: 15px;
+    margin: 10px auto;
+    border-radius: 10px;
+    border: none;
         background-color: #222;
-        outline: none;
-        border: 1px solid #555;
-        border-radius: 30px;
-        padding: 5px 20px;
-        letter-spacing: 1px;
+        color: white;
+            width: 350px;
     }
-    
-    
-    .loginForm .Btn {
-        width: 100px;
-        height: 30px;
-        margin: 20px 0;
-        background-color: #22222200;
-        border: 2px solid #FFA7F4;
-        border-radius: 10px;
-        color: #FFA7F4;
-        font-weight: 700;
-    }
-    
-    .loginForm .Btn:hover {
-        background-color: #FFA7F4;
-        color: #333;
-    }
-    
-    .loginForm .check label a:hover {
-        color: #FFA7F4;
+section form input[type="submit"] {
+    padding: 10px 20px;
+    margin: 30px auto;
+    border: none;
+    border-radius: 10px;
+    background-color: #8d4d84;
+        color: white;
+        font-size: 15px;
 }
