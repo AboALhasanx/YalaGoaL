@@ -42,6 +42,6 @@
     text-decoration: underline;
 }
 
-.newsCard img:hover {
-    opacity: 80%;
+.newsCard:hover {
+    opacity: 60%;
 }

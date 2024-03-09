@@ -19,9 +19,18 @@
       <img src="../images/mainLogo.svg" alt="Logo">
     </div>
 
-    <div class="search">
-      <input type="text" placeholder="Search">
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Go to league</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#pl"><img class="leagueicone" src="../images/leagues/PL_clube/PL_ENG.png"><span>Primer League</span></a>
+        <a href="#ll"><img class="leagueicone" src="../images/leagues/LL_clube/LL_SPN.png"><span>LaLiga</span></a>
+        <a href="#sa"><img class="leagueicone" src="../images/leagues/SA_clube/SA-ITL.png"><span>Serie A </span></a>
+        <a href="#bl"><img class="leagueicone" src="../images/leagues/BL_clube/BL_GRM.png"><span>Bundesliga</span></a>
+        <a href="#rsl"><img class="leagueicone" src="../images/leagues/RSL_clube/RSL_KSA.png"><span>Roshn Saudi League</span></a>
+        <a href="#isl"><img class="leagueicone" src="../images/leagues/ISL_clube/ISL_IRQ.png"><span>Iraqi Stars League</span></a>
+      </div>
     </div>
+    
     <ul>
       <li><a href="#" style="color:#FFA7F4;">Home</a></li>
       <li><a href="../html/newsPage.html">News</a></li>
@@ -36,7 +45,7 @@
 
   <div class="main">
     <!---PL - England League-->
-    <div class="league">
+    <div class="league" id="pl">
       <div class="leagueHeader">
         <img src="../images/leagues/PL_clube/PL_ENG.png" alt="primer league logo" class="leagueicone">
         <p class="leaugeTitle">&Tab;Primer League ― England </p>
@@ -47,30 +56,54 @@
             <tr>
               <td class="clubName">Arsenal</td>
               <td><img src="../images/leagues/PL_clube/ARS.png" alt="arsenal"></td>
-              <td>12:30 PM</td>
+              <td>
+                <div class="live">
+                  <span class="homeRslt">0</span>
+                  <span class="time">0:00</span>
+                  <span class="awayRslt">0</span>
+                </div>
+              </td>
               <td><img src="../images/leagues/PL_clube/MNC.png" alt="man city"></td>
               <td>Manchester City</td>
             </tr>
             <tr>
               <td>Liverpool</td>
               <td><img src="../images/leagues/PL_clube/LIV.png" alt="Liverpool"></td>
-              <td>12:30 PM</td>
+              <td>
+                <div class="live">
+                  <span class="homeRslt">0</span>
+                  <span class="time">0:00</span>
+                  <span class="awayRslt">0</span>
+                </div>
+              </td>
               <td><img src="../images/leagues/PL_clube/CHE.png" alt="Chealsa"></td>
               <td>Chealsa</td>
             </tr>
             <tr>
               <td>Manchester United</td>
               <td><img src="../images/leagues/PL_clube/MNU.png" alt="man united"></td>
-              <td>12:30 PM</td>
+              <td>
+                <div class="live">
+                  <span class="homeRslt">0</span>
+                  <span class="time">0:00</span>
+                  <span class="awayRslt">0</span>
+                </div>
+              </td>
               <td><img src="../images/leagues/PL_clube/TOT.png" alt="totenham"></td>
               <td>Tottenham Hotspur</td>
             </tr>
             <tr>
-              <td>Arsenal</td>
-              <td><img src="../images/leagues/PL_clube/ARS.png" alt="arsenal"></td>
-              <td>12:30 PM</td>
-              <td><img src="../images/leagues/PL_clube/MNC.png" alt="man city"></td>
-              <td>Manchester City</td>
+              <td>Newcastle United</td>
+              <td><img src="../images/leagues/PL_clube/NEC.png" alt="Newcastle United"></td>
+              <td>
+                <div class="live">
+                  <span class="homeRslt">0</span>
+                  <span class="time">0:00</span>
+                  <span class="awayRslt">0</span>
+                </div>
+              </td>
+              <td><img src="../images/leagues/PL_clube/NTF.png" alt="Nottingham Forest"></td>
+              <td>Nottingham Forest</td>
             </tr>
             <tr>
               <td>Brighton</td>
@@ -124,8 +157,8 @@
             </tr>
             <tr>
               <td>5</td>
-              <td><img src="../images/leagues/PL_clube/TOT.png" alt="Tottenham Hotspur" class="icon"></td>
-              <td>Tottenham Hotspur</td>
+              <td><img src="../images/leagues/PL_clube/NEC.png" alt="Newcastle United" class="icon"></td>
+              <td>Newcastle United</td>
               <td>28</td>
               <td>32</td>
               <td>51</td>
@@ -145,7 +178,7 @@
     <!------------------------>
 
     <!---LL - Spanish League--->
-    <div class="league">
+    <div class="league" id="ll">
       <div class="leagueHeader">
         <img src="../images/leagues/LL_clube/LL_SPN.png" alt="LaLiga logo" class="leagueicone">
         <p class="leaugeTitle">&Tab;LaLiga ― Spain </p>
@@ -156,14 +189,26 @@
             <tr>
               <td class="clubName">Barcelona</td>
               <td><img src="../images/leagues/LL_clube/FCB.png" alt="Barcelona"></td>
-              <td>12:30 PM</td>
+              <td>
+                <div class="live">
+                  <span class="homeRslt">0</span>
+                  <span class="time">0:00</span>
+                  <span class="awayRslt">0</span>
+                </div>
+              </td>
               <td><img src="../images/leagues/LL_clube/RMD.png" alt="Real Madrid"></td>
               <td>Real Madrid</td>
             </tr>
             <tr>
               <td>Athletic Bilbao</td>
               <td><img src="../images/leagues/LL_clube/ATB.png" alt="Athletic Bilbao"></td>
-              <td>12:30 PM</td>
+              <td>
+                <div class="live">
+                  <span class="homeRslt">0</span>
+                  <span class="time">0:00</span>
+                  <span class="awayRslt">0</span>
+                </div>
+              </td>
               <td><img src="../images/leagues/LL_clube/ATM.png" alt="Atlético Madrid"></td>
               <td>Atlético Madrid</td>
             </tr>
@@ -240,8 +285,8 @@
     </div>
     <!------------------------>
 
-    <!---LA - Italian League--->
-    <div class="league">
+    <!---SA - Italian League--->
+    <div class="league" id="sa">
       <div class="leagueHeader">
         <img src="../images/leagues/SA_clube/SA-ITL.png" alt="Serie A logo" class="leagueicone">
         <p class="leaugeTitle">&Tab;Serie A ― Italy</p>
@@ -252,14 +297,26 @@
             <tr>
               <td class="clubName">Juventus</td>
               <td><img src="../images/leagues/SA_clube/JUV.png" alt="Juventus"></td>
-              <td>12:30 PM</td>
+              <td>
+                <div class="live">
+                  <span class="homeRslt">0</span>
+                  <span class="time">0:00</span>
+                  <span class="awayRslt">0</span>
+                </div>
+              </td>
               <td><img src="../images/leagues/SA_clube/INT.png" alt="Inter Milan"></td>
               <td>Inter Milan</td>
             </tr>
             <tr>
               <td>AC Milan</td>
               <td><img src="../images/leagues/SA_clube/ACM.png" alt="AC Milan"></td>
-              <td>12:30 PM</td>
+              <td>
+                <div class="live">
+                  <span class="homeRslt">0</span>
+                  <span class="time">0:00</span>
+                  <span class="awayRslt">0</span>
+                </div>
+              </td>
               <td><img src="../images/leagues/SA_clube/NAP.png" alt="Napoli"></td>
               <td>Napoli</td>
             </tr>
@@ -336,7 +393,7 @@
     <!------------------------>
 
     <!---BL - German League--->
-    <div class="league">
+    <div class="league" id="bl">
       <div class="leagueHeader">
         <img src="../images/leagues/BL_clube/BL_GRM.png" alt="Bundesliga logo" class="leagueicone">
         <p class="leaugeTitle">&Tab;Bundesliga ― Germany</p>
@@ -347,14 +404,26 @@
             <tr>
               <td class="clubName">Bayer Leverkusen</td>
               <td><img src="../images/leagues/BL_clube/B04.png" alt="Bayer 04 Leverkusen"></td>
-              <td>12:30 PM</td>
+              <td>
+                <div class="live">
+                  <span class="homeRslt">0</span>
+                  <span class="time">0:00</span>
+                  <span class="awayRslt">0</span>
+                </div>
+              </td>
               <td><img src="../images/leagues/BL_clube/FCM.png" alt="Bayern Munich"></td>
               <td>Bayern Munich</td>
             </tr>
             <tr>
               <td>Borussia Mönchengladbach</td>
               <td><img src="../images/leagues/BL_clube/BMH.png" alt="Borussia Mönchengladbach"></td>
-              <td>12:30 PM</td>
+              <td>
+                <div class="live">
+                  <span class="homeRslt">0</span>
+                  <span class="time">0:00</span>
+                  <span class="awayRslt">0</span>
+                </div>
+              </td>
               <td><img src="../images/leagues/BL_clube/BVB.png" alt="Borussia Dortmund"></td>
               <td>Borussia Dortmund</td>
             </tr>
@@ -431,7 +500,7 @@
     <!------------------------>
 
     <!---ISL - Iraqi League--->
-    <div class="league">
+    <div class="league" id="isl">
       <div class="leagueHeader">
         <img src="../images/leagues/ISL_clube/ISL_IRQ.png" alt="Iraqi stars league logo" class="leagueicone">
         <p class="leaugeTitle">&Tab;Iraqi stars league ― Iraq</p>
@@ -442,7 +511,13 @@
             <tr>
               <td class="clubName">Al-Qasim</td>
               <td><img src="../images/leagues/ISL_clube/QAS.png" alt="Al-Qasim"></td>
-              <td>12:30 PM</td>
+              <td>
+                <div class="live">
+                  <span class="homeRslt">0</span>
+                  <span class="time">0:00</span>
+                  <span class="awayRslt">0</span>
+                </div>
+              </td>
               <td><img src="../images/leagues/ISL_clube/SHO.png" alt="Al-Shorta"></td>
               <td>Al-Shorta</td>
             </tr>
@@ -503,7 +578,7 @@
     <!------------------------>
 
     <!---RSL - Saudi League--->
-    <div class="league">
+    <div class="league" id="rsl">
       <div class="leagueHeader">
         <img src="../images/leagues/RSL_clube/RSL_KSA.png" alt="Roshn Saudi League  logo" class="leagueicone">
         <p class="leaugeTitle">&Tab;Roshn Saudi League ― Saudi Arabia</p>
@@ -514,14 +589,26 @@
             <tr>
               <td class="clubName">Al-Ahli Saudi</td>
               <td><img src="../images/leagues/RSL_clube/AHL.png" alt="Al-Ahli Saudi"></td>
-              <td>12:30 PM</td>
+              <td>
+                <div class="live">
+                  <span class="homeRslt">0</span>
+                  <span class="time">0:00</span>
+                  <span class="awayRslt">0</span>
+                </div>
+              </td>
               <td><img src="../images/leagues/RSL_clube/ITH.png" alt="Al-Ittihad"></td>
               <td>Al-Ittihad</td>
             </tr>
             <tr>
               <td>Al Nassr</td>
               <td><img src="../images/leagues/RSL_clube/NAS.png" alt="Al Nassr"></td>
-              <td>12:30 PM</td>
+              <td>
+                <div class="live">
+                  <span class="homeRslt">0</span>
+                  <span class="time">0:00</span>
+                  <span class="awayRslt">0</span>
+                </div>
+              </td>
               <td><img src="../images/leagues/RSL_clube/HIL.png" alt="Al-Hilal	"></td>
               <td>Al-Hilal </td>
             </tr>
@@ -588,5 +675,5 @@
   <!---Footer----->
 </body>
 
-
+<script src="../js/script.js"></script>
 </html>
