@@ -1,222 +1,86 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Roboto+Slab&display=swap');
+
 *::selection{
-  background-color: #8d4d84;
+background-color: #8d4d84;
 }
 html {
-  scroll-behavior: smooth;
+scroll-behavior: smooth;
+font-family: Calibri;
+  text-transform: capitalize;
+  background-color: black;
 }
+
 *{
-  color: white;
-  transition: .2s all ease;
+color: white;
 }
 
-body {
-    background-color: black;
-    margin: 0;
-    padding: 0;
-    font-family: Calibri;
-    text-transform: capitalize;
-    position: relative;
-    box-sizing: border-box;
-  }
-  
-  nav {
-    background-color: #333;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 10px 20px;
-  }
-  
-  .logo img {
-    height: 50px;
-    width: auto;
-  }
-  .icons img{
-    height: 40px;
-  }
 
-  
-  ul {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-  }
-  
-  li, footer div p, footer div a, .dropdown-content a{
-    padding: 0 20px;
-  }
-  li {
-    font-size: larger;
-    
-    letter-spacing: 1.2px;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-  }
+/*navbar styling*/
+nav {
+top: 0;
+background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 20px;
+}
 
-    nav a i {
-    font-size: 30px;
-  }
-  
-    nav a:hover,
-    nav a i:hover {
-    color: #FFA7F4;
-  }
-  
-  .search input {
-    padding: 8px;
-    border-radius: 30px;
-    width: 300px;
-    border: none;
-    margin-right: 10px;
-    background-color: #222;
-  }
+.logo img {
+  height: 50px;
+}
+ul {
+list-style: none;
+  display: flex;
+  align-items: center;
+}
+nav li,
+footer div p,
+footer div a,
+footer div a i,
+.dropdown-content a {
+  padding: 0 10px;
+}
 
-  .search input:focus {
-    border: 1.5px solid #FFA7F4;
-    outline: none; 
-  }
-  .search input::placeholder{
-    font-weight: 600;
-  }
-  
-  .icons a {
-    margin-left: 10px;
-  }
+nav li {
+  font-size: 20px;
+}
 
-  footer div{
-    margin-top: 50px;
-    position: relative;
-    bottom: 0;
-    color: #fff;
-    background-color: #333;
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: space-around;
-  }
-    footer div p,
-    footer div a {
-      
-    align-items: center;
-    display: flex;
-  }
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
 
-    footer div a i {
-      padding: 0 10px;
-    }
-  .main{
-    width: 95%;
-    margin: 20px auto;
-    background-color: #333;
-    border-radius: 30px;
-    font-size: 15px;
-    font-weight: 500;
-  }
+nav a i {
+  font-size: 30px;
+}
 
-  .main p{
-    padding: 0 5px;
-    font-weight: 600;
-  }
+nav a:hover,
+nav a i:hover {
+  color: #FFA7F4;
+}
 
-  .league {
-    margin: 20px 0 20px 0;
-  }
-
-  .matchesAndTable{
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .leagueHeader{
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
-    background-color: #444;
-    border-radius: 20px 20px 0 0 ;
-  }
-    .leagueicone,
-    .league .matchesAndTable .matchDay .matchesTable img,
-    .leagueTable img {
-    width: 25px;
-    height: 25px;
-    padding-right: 5px;
-  }
-
-  .league .matchesAndTable .matchDay .matchesTable{
-    margin: 10px 0 0 40px;
-  }
-  .league .matchesAndTable .matchDay .matchesTable td{
-    padding: 13px 10px;
-  }
-  .league .matchesAndTable .matchDay .matchesTable td:first-child{
-    text-align: right;
-  }
-
-                .league .matchDay .live {
-                  text-align: center;
-                  display: flex;
-                  justify-content: space-between;
-                  align-items: center;
-                }
-        
-                .league .matchDay .live .homeRslt,
-                .awayRslt {
-                  font-weight: 800;
-                  font-size: 20px;
-                }
-        
-                .league .matchDay .live .time {
-                  font-size: 11px;
-                  color: #fff;
-                  border-radius: 2px;
-                  width: 25px;
-                }
-  .clubName{
-    width: 150px;
-  }
-
-  .leagueTable{
-    margin: 10px 50px 10px 0 ;
-  }
-
-  .leagueTable tr td{
-    padding: 5px 15px 5px 20px;
-  }
-  .leagueTable tr td:first-child{
-    text-align: right;
-    padding: 0;
-  }
+/*go to league button list */
 .dropbtn {
   background-color: #222;
-  /* Adjusted color to match your project */
   color: white;
-  font-size: 20px;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-  width: 200px;
-  height: 30px;
-  border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
 }
 
 .dropbtn:hover,
 .dropbtn:focus {
   background-color: #8d4d84;
-  /* Adjusted hover color */
 }
-
 .dropdown {
   position: relative;
   display: inline-block;
 }
-
 .dropdown-content {
   border-radius: 10px;
   display: none;
@@ -235,8 +99,7 @@ body {
   text-decoration: none;
   display: flex;
   opacity: 50%;
-}
-
+  }
 
 .dropdown a:hover {
   background-color: #333;
@@ -245,4 +108,86 @@ body {
 
 .show {
   display: block;
+}
+.main {
+  width: 95%;
+  margin: 20px auto;
+  background-color: #333;
+  border-radius: 30px;
+  font-size: 15px;
+}
+
+.main p {
+  padding: 0 5px;
+font-weight: bold;
+}
+
+.league {
+margin: 20px 0;
+}
+
+.matchesAndTable {
+  display: flex;
+  justify-content: space-between;
+}
+
+.leagueHeader {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  background-color: #444;
+border-radius: 20px 20px 0 0;
+}
+.leagueIcon,
+.league .matchesAndTable .matchDay .matchesTable img,
+.leagueTable img {
+  width: 25px;
+padding-right: 5px;
+}
+
+.league .matchesAndTable .matchDay .matchesTable {
+  margin: 10px 0 0 40px;
+}
+.league .matchesAndTable .matchDay .matchesTable td {
+  padding: 20px 5px;
+}
+.league .matchesAndTable .matchDay .matchesTable td:first-child {
+  text-align: right;
+}
+
+.league .matchDay .live {
+display: flex;
+text-align: center;
+justify-content: space-between;
+align-items: center;
+}
+.league .matchDay .live .Result {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.league .matchDay .live .time {
+font-size: 10px;
+}
+.clubName {
+  width: 150px;
+}
+
+.leagueTable {
+  margin: 10px 50px 10px 10px;
+}
+
+.leagueTable tr td {
+padding: 10px 15px;
+}
+
+
+footer div {
+  margin-top: 50px;
+  background-color: #333;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
