@@ -8,12 +8,6 @@
       leagueDropdown.style.display = 'block';
     });
   
-    // Hide dropdown when user clicks outside the search input
-    document.addEventListener('click', function(event) {
-      if (!event.target.matches('#searchInput')) {
-        leagueDropdown.style.display = 'none';
-      }
-    });
   
     // Handle clicking on league options
     leagueDropdown.addEventListener('click', function(event) {
