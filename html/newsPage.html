@@ -22,12 +22,9 @@
     <div class="dropdown">
         <button onclick="myFunction()" class="dropbtn">Go to league</button>
         <div id="myDropdown" class="dropdown-content">
-          <a href="#pl"><img class="leagueicone" src="../images/leagues/PL_clube/PL_ENG.png"><span>Primer League</span></a>
-          <a href="#ll"><img class="leagueicone" src="../images/leagues/LL_clube/LL_SPN.png"><span>LaLiga</span></a>
-          <a href="#sa"><img class="leagueicone" src="../images/leagues/SA_clube/SA-ITL.png"><span>Serie A </span></a>
-          <a href="#bl"><img class="leagueicone" src="../images/leagues/BL_clube/BL_GRM.png"><span>Bundesliga</span></a>
-          <a href="#rsl"><img class="leagueicone" src="../images/leagues/RSL_clube/RSL_KSA.png"><span>Roshn Saudi League</span></a>
-          <a href="#isl"><img class="leagueicone" src="../images/leagues/ISL_clube/ISL_IRQ.png"><span>Iraqi Stars League</span></a>
+          <a href="#pl"><img class="leagueIcon" src="../images/leagues/PL_clube/PL_ENG.png"><span>Primer League</span></a>
+          <a href="#ll"><img class="leagueIcon" src="../images/leagues/LL_clube/LL_SPN.png"><span>LaLiga</span></a>
+          <a href="#bl"><img class="leagueIcon" src="../images/leagues/BL_clube/BL_GRM.png"><span>Bundesliga</span></a>
         </div>
       </div>
     <ul>
@@ -43,9 +40,11 @@
   </nav>
 
   <div class="main">
-    <div class="league">
+
+    <!---PL - England League-->
+    <div class="league" id="pl">
         <div class="leagueHeader">
-            <img src="../images/leagues/PL_clube/PL_ENG.png" alt="primer league logo" class="leagueicone">
+            <img src="../images/leagues/PL_clube/PL_ENG.png" alt="primer league logo" class="leagueIcon">
             <p class="leaugeTitle">&Tab;Primer League ― England </p>
           </div>
         <div class="newsContainer">
@@ -94,9 +93,9 @@
         </div>
     </div>
 
-    <div class="league">
+    <div class="league" id="ll">
         <div class="leagueHeader">
-            <img src="../images/leagues/LL_clube/LL_SPN.png" alt="Laliga logo" class="leagueicone">
+            <img src="../images/leagues/LL_clube/LL_SPN.png" alt="Laliga logo" class="leagueIcon">
             <p class="leaugeTitle">&Tab;LaLiga ― Spain </p>
           </div>
         <div class="newsContainer">
@@ -133,32 +132,36 @@
         </div>
     </div>
 
-
-    <div class="league">
+    <div class="league" id="bl">
         <div class="leagueHeader">
-            <img src="../images/leagues/ISL_clube/ISL_IRQ.png" alt="Iraqi logo" class="leagueicone">
-            <p class="leaugeTitle">&Tab;Iraqi League Stars ― Iraq </p>
+            <img src="../images/leagues/BL_clube/BL_GRM.png" alt="bondsleague logo" class="leagueIcon">
+            <p class="leaugeTitle">&Tab;Bundesliga ― Germany</p>
           </div>
         <div class="newsContainer">
             <div class="newsCard">
-                <img src="../images/leagues/ISL_clube/news/iraqileagueNews1.jpg">
-                <h1>Al-Naft Penalizes Football Team: 30% Deduction for Poor Results</h1>
+                <img src="../images/leagues/BL_clube/BondslegaNews1.jpg">
+                <h1>Alejandro Grimaldo on Xabi Alonso: <q>Xabi is something special</q></h1>
                 <p>90min<span> 9 hours ago</span></p>
             </div>
             <div class="newsCard">
-                <img src="../images/leagues/ISL_clube/news/iraqileagueNews2.jpg" >
-                <h1>Hussam Mahdi: Draw Against Air Force Like a Victory</h1>
-                <p>90min<span> 9 hours ago</span></p>
-            </div>
-            <div class="newsCard">
-                <img src="../images/leagues/ISL_clube/news/iraqileagueNews3.jpg">
-                <h1>Iraqi National Team Coach Kasas Calls Up Karar Mohammed for Next Philippines Match</h1>
-                <p>Sky sport<span> 9 hours ago</span></p>
-            </div>
-            <div class="newsCard">
-                <img src="../images/leagues/ISL_clube/news/iraqileagueNews4.jpg">
-                <h1>Head of AFC Salman bin Ibrahim Doesn't Lodge Complaint Against Deputy President Yunus Mahmoud</h1>
+                <img src="../images/leagues/BL_clube/BondslegaNews5.jpg">
+                <h1>Incredible stat shows Jamal Musiala’s influence in the final third</h1>
                 <p>BBC sport<span> 9 hours ago</span></p>
+            </div>
+            <div class="newsCard">
+                <img src="../images/leagues/BL_clube/BondslegaNews4.jpg">
+                <h1>Eberl gives update on Bayern's contract talks with Davies, Kimmich and Sané</h1>
+                <p>BBC sport<span> 9 hours ago</span></p>
+            </div>
+            <div class="newsCard">
+                <img src="../images/leagues/BL_clube/BondslegaNews2.jpg" >
+                <h1>Alphonso Davies given Bayern Munich ultimatum</h1>
+                <p>90min<span> 9 hours ago</span></p>
+            </div>
+            <div class="newsCard">
+                <img src="../images/leagues/BL_clube/BondslegaNews3.jpg">
+                <h1>Julian Schuster to replace Christian Streich at Freiburg</h1>
+                <p>Sky sport<span> 9 hours ago</span></p>
             </div>
         </div>
     </div>

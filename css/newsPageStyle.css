@@ -2,17 +2,16 @@
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    margin: 20px 0 40px 0;
+    margin: 20px auto 40px auto;
     padding-bottom: 20px;
 }
 
 .newsCard {
-    width: calc(95% / 3);
+    width: calc(94% / 3);
     min-height: 400px;
     padding: 10px 10px;
     position: relative;
     font-weight: 300;
-
 }
 
 .newsCard img {
@@ -43,5 +42,5 @@
 }
 
 .newsCard:hover {
-    opacity: 60%;
+    scale: 1.05;
 }
