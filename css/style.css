@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather|Roboto+Slab&display=swap');
-
+/*تجعل لون التحديد لكل عنصر في الملف*/
 *::selection{
 background-color: #8d4d84;
 }
+/*ضبط الشكل الكلي للروت*/
 html {
 scroll-behavior: smooth;
 font-family: Calibri;
@@ -10,12 +10,25 @@ font-family: Calibri;
   background-color: black;
 }
 
+/*جعل كل النصوص باللون الابيض*/
 *{
 color: white;
 }
 
+/*ضبط الروابط لكل الصفحة*/
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
 
-/*navbar styling*/
+/*ضبط القوائم لكل الصفحة*/
+ul {
+  list-style: none;
+    display: flex;
+    align-items: center;
+  }
+
+/*ضبط شكل شريط القوائم للصفحة*/
 nav {
 top: 0;
 background-color: #333;
@@ -23,36 +36,25 @@ background-color: #333;
   align-items: center;
   justify-content: space-evenly;
   padding: 10px 20px;
+  font-size: 20px;
+}
+
+nav .currentTab{
+  color:#FFA7F4;
 }
 
 .logo img {
   height: 50px;
 }
-ul {
-list-style: none;
-  display: flex;
-  align-items: center;
-}
+
+
+/*خاصية الهوامش المشتركة لشريط القوائم والشريط السفلي*/
 nav li,
 footer div p,
 footer div a,
 footer div a i,
 .dropdown-content a {
-  padding: 0 10px;
-}
-
-nav li {
-  font-size: 20px;
-}
-
-a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-}
-
-nav a i {
-  font-size: 30px;
+  padding: 0 20px;
 }
 
 nav a:hover,
@@ -109,6 +111,8 @@ nav a i:hover {
 .show {
   display: block;
 }
+
+
 .main {
   width: 95%;
   margin: 20px auto;
@@ -161,6 +165,7 @@ text-align: center;
 justify-content: space-between;
 align-items: center;
 }
+
 .league .matchDay .live .Result {
   font-weight: bold;
   font-size: 20px;

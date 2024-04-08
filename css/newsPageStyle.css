@@ -1,7 +1,6 @@
 .newsContainer {
     display: flex;
     flex-wrap: wrap;
-    box-sizing: border-box;
     margin: 20px auto 40px auto;
     padding-bottom: 20px;
 }
@@ -28,19 +27,7 @@
 .newsCard p {
     position: absolute;
     bottom: 0;
-}
-
-.newsCard p span {
     font-style: italic;
     font-size: small;
     color: #999;
-    padding: 0 10px;
-}
-
-.newsCard h1:hover {
-    text-decoration: underline;
-}
-
-.newsCard:hover {
-    scale: 1.05;
 }

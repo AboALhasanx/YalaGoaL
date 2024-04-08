@@ -10,7 +10,7 @@
     <link rel="icon" type="images/SVG" href="../images/logoIcon.svg">
     <title>About Us</title>
     <style>
-        .title {
+        .title{
             width:70%;
             margin: 20px auto;
             padding: 10px 30px;
@@ -20,7 +20,6 @@
         }
         h1 {
             font: 800;
-            width: fit-content;
         }
         h1:hover, .title p:last-child:hover ,span:hover{
             color: #FFA7F4;
@@ -34,29 +33,18 @@
             font-size: medium;
             font-family: monospace;
         }
-
-        
     </style>
 </head>
 
 <body>
-
     <nav>
         <div class="logo">
             <img src="../images/mainLogo.svg" alt="Logo">
         </div>
-        <div class="dropdown" style="visibility: hidden;">
-            <button onclick="myFunction()" class="dropbtn">Go to league</button>
-            <div id="myDropdown" class="dropdown-content">
-              <a href="#pl"><img class="leagueIcon" src="../images/leagues/PL_clube/PL_ENG.png"><span>Primer League</span></a>
-              <a href="#ll"><img class="leagueIcon" src="../images/leagues/LL_clube/LL_SPN.png"><span>LaLiga</span></a>
-              <a href="#bl"><img class="leagueIcon" src="../images/leagues/BL_clube/BL_GRM.png"><span>Bundesliga</span></a>
-            </div>
-          </div>
         <ul>
             <li><a href="../html/index.html">Home</a></li>
             <li><a href="../html/newsPage.html">News</a></li>
-            <li><a href="#" style="color:#FFA7F4;">About</a></li>
+            <li><a class="currentTab" href="#">About</a></li>
             <li>
                 <div class="icons">
                 <a href="../html/loginPage.html"><i class="fa-solid fa-user"></i></a>
@@ -107,5 +95,4 @@
   </footer>
   <!---Footer----->
 </body>
-
 </html>
